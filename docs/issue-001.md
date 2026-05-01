@@ -43,7 +43,7 @@
 
 ---
 
-### ✦ Gamma——输入大纲，PPT秒生成
+### ✦ Gamma——输入大纲，PPT秒生成（需要VPN上网）
 
 ![Gamma工具演示](images/gamma-demo.jpg)
 
