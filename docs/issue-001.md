@@ -35,11 +35,11 @@
 - 📊 **成绩分析报告**：把班级成绩表格扔进去，AI帮你总结各分数段分布、错题类型
 
 **三步上手：**
-1. 打开网址 [coze.cn](https://coze.cn)，用手机号注册登录
+1. 打开网址 [coze.cn](https://www.coze.cn/overview?invite_code=6650df92d0014a2395826e9c04e2e7b4)，用手机号注册登录
 2. 点击「创建Bot」，给AI助手起个名字（比如"程老师助手"）
 3. 在「人设与提示词」里描述它是什么角色，然后添加它需要会的技能（比如"帮我写通知"）
 
-🔗 **地址：** [coze.cn](https://coze.cn)（国内版，更稳定）
+🔗 **地址：** [coze.cn](https://www.coze.cn/overview?invite_code=6650df92d0014a2395826e9c04e2e7b4)（国内版，更稳定）
 
 ---
 
