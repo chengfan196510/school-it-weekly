@@ -8,8 +8,16 @@ jobs:
   remind:
     runs-on: ubuntu-latest
     steps:
-      - name: 发送钉钉提醒
+      - name: 计算签名并发送钉钉提醒
+        env:
+          WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+          SECRET: ${{ secrets.DINGTALK_SECRET }}
         run: |
+          timestamp=$(date +%s%3N)
+          string_to_sign="${timestamp}\n${SECRET}"
+          sign=$(echo -ne "$string_to_sign" | openssl dgst -sha256 -hmac "$SECRET" -binary | base64)
+          sign_encoded=$(python3 -c "import urllib.parse; print(urllib.parse.quote('''$sign'''))")
+          url="${WEBHOOK}&timestamp=${timestamp}&sign=${sign_encoded}"
           curl -s -X POST \
             -H 'Content-Type: application/json' \
             -d '{
@@ -19,4 +27,4 @@ jobs:
                 "text": "## 📝 周报提醒\n\n明天该发《校园信息化周报》了！\n\n请准备好本周内容，push到GitHub后自动更新线上版。\n\n👉 [查看周报](https://chengfan196510.github.io/school-it-weekly/)"
               }
             }' \
-            ${{ secrets.DINGTALK_WEBHOOK }}
+            "$url"

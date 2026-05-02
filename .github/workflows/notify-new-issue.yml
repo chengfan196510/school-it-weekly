@@ -3,7 +3,7 @@ name: 新周报通知
 on:
   push:
     paths:
-      - 'docs/issue-*.md'    # 只有周报文件变动时才触发
+      - 'docs/issue-*.md'
 
 jobs:
   notify:
@@ -18,8 +18,16 @@ jobs:
           ISSUE=$(basename "$FILE" .md)
           echo "issue=$ISSUE" >> $GITHUB_OUTPUT
 
-      - name: 发送钉钉通知
+      - name: 计算签名并发送钉钉通知
+        env:
+          WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+          SECRET: ${{ secrets.DINGTALK_SECRET }}
         run: |
+          timestamp=$(date +%s%3N)
+          string_to_sign="${timestamp}\n${SECRET}"
+          sign=$(echo -ne "$string_to_sign" | openssl dgst -sha256 -hmac "$SECRET" -binary | base64)
+          sign_encoded=$(python3 -c "import urllib.parse; print(urllib.parse.quote('''$sign'''))")
+          url="${WEBHOOK}&timestamp=${timestamp}&sign=${sign_encoded}"
           curl -s -X POST \
             -H 'Content-Type: application/json' \
             -d "{
@@ -29,4 +37,4 @@ jobs:
                 \"text\": \"## 🏫 校园信息化周报更新啦！\n\n${{ steps.weekly.outputs.issue }} 已发布\n\n👉 [点击阅读](https://chengfan196510.github.io/school-it-weekly/)\n\n每周五更新，关注不迷路～\"
               }
             }" \
-            ${{ secrets.DINGTALK_WEBHOOK }}
+            "$url"
