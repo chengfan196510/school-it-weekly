@@ -1,0 +1,22 @@
+name: 周报提醒
+
+on:
+  schedule:
+    - cron: '0 9 * 4-7,9-1 4'   # 每年4-7月和9-1月的每周四早上9点提醒
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 发送钉钉提醒
+        run: |
+          curl -s -X POST \
+            -H 'Content-Type: application/json' \
+            -d '{
+              "msgtype": "markdown",
+              "markdown": {
+                "title": "周报提醒",
+                "text": "## 📝 周报提醒\n\n明天该发《校园信息化周报》了！\n\n请准备好本周内容，push到GitHub后自动更新线上版。\n\n👉 [查看周报](https://chengfan196510.github.io/school-it-weekly/)"
+              }
+            }' \
+            ${{ secrets.DINGTALK_WEBHOOK }}
