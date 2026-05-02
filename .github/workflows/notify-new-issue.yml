@@ -1,0 +1,32 @@
+name: 新周报通知
+
+on:
+  push:
+    paths:
+      - 'docs/issue-*.md'    # 只有周报文件变动时才触发
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 获取最新周报文件名
+        id: weekly
+        run: |
+          FILE=$(ls -t docs/issue-*.md | head -1)
+          ISSUE=$(basename "$FILE" .md)
+          echo "issue=$ISSUE" >> $GITHUB_OUTPUT
+
+      - name: 发送钉钉通知
+        run: |
+          curl -s -X POST \
+            -H 'Content-Type: application/json' \
+            -d "{
+              \"msgtype\": \"markdown\",
+              \"markdown\": {
+                \"title\": \"新周报发布\",
+                \"text\": \"## 🏫 校园信息化周报更新啦！\n\n${{ steps.weekly.outputs.issue }} 已发布\n\n👉 [点击阅读](https://chengfan196510.github.io/school-it-weekly/)\n\n每周五更新，关注不迷路～\"
+              }
+            }" \
+            ${{ secrets.DINGTALK_WEBHOOK }}
