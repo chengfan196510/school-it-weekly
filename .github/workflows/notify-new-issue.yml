@@ -14,7 +14,7 @@ jobs:
       - name: 获取最新周报文件名
         id: weekly
         run: |
-          FILE=$(ls -t docs/issue-*.md | head -1)
+          FILE=$(ls docs/issue-*.md | sort | tail -1)
           ISSUE=$(basename "$FILE" .md)
           echo "issue=$ISSUE" >> $GITHUB_OUTPUT
 
@@ -34,7 +34,7 @@ jobs:
               \"msgtype\": \"markdown\",
               \"markdown\": {
                 \"title\": \"新周报发布\",
-                \"text\": \"## 🏫 校园信息化周报更新啦！\n\n${{ steps.weekly.outputs.issue }} 已发布\n\n👉 [点击阅读](https://chengfan196510.github.io/school-it-weekly/)\n\n每周五更新，关注不迷路～\"
+                \"text\": \"## 🏫 校园信息化周报更新啦！\n\n${{ steps.weekly.outputs.issue }} 已发布\n\n👉 [点击阅读](https://chengfan196510.github.io/school-it-weekly/${{ steps.weekly.outputs.issue }}.html)\n\n每周五更新，关注不迷路～\"
               }
             }" \
             "$url"
