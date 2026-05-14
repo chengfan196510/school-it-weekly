@@ -29,7 +29,7 @@
 
 💡 **核心理念：** AI生成初稿，教师审核定稿
 
-🔗 地址：https://www.kaoshiyun.com.cn/
+🔗 地址：[https://www.kaoshiyun.com.cn/](https://www.kaoshiyun.com.cn/
 
 ---
 
@@ -47,7 +47,7 @@
 
 💡 **核心理念：** AI生成初稿，教师审核定稿
 
-🔗 地址：https://ai.kyou.ltd/pc
+🔗 地址：[https://ai.kyou.ltd/pc](https://ai.kyou.ltd/pc)
 
 ---
 
