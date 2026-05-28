@@ -3,7 +3,8 @@
 > 🏫 宁波诺丁汉大学附属中学 · 信息办出品
 > 📅 2026年5月30日 · 每周五发布
 
-![封面图]（images/cover-005.jpg)
+![封面图](images/cover.jpg)
+
 
 ---
 
@@ -23,7 +24,7 @@
 
 ### ✦ EasyClaw——零门槛领养你的AI龙虾
 
-![EasyClaw界面截图](images/easyclaw.jpg)
+![EasyClaw界面截图](images/easyclaw-intro.jpg)
 
 **一句话说清：** 装个软件就有个AI替你操作电脑，写文档、发邮件、整理表格一句话搞定。
 
