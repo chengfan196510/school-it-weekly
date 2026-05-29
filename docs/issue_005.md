@@ -128,7 +128,7 @@
 
 ---
 
-### 📌 大厂纷纷推出自己的"龙虾"
+### 📌 各大厂纷纷推出自己的"龙虾"
 
 **发生了什么：** 阿里推出CoPaw、腾讯推出QClaw和WorkBuddy、钉钉推出Wukong、百度推出移动版OpenClaw、小米内测MiclawAgent、Kimi发布Kimi Claw……各大厂都在入局AI Agent。
 
