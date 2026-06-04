@@ -82,7 +82,7 @@ AIGC:
 
 > 教育/政策/AI，只挑和你有关的
 
-![配图](images/cover-006.webp)
+![配图](images/computing-power.webp)
 
 ### A. 250位教育专家呼吁学校暂停AI使用5年
 
