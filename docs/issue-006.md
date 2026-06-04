@@ -13,7 +13,7 @@ AIGC:
 > 🏫 宁波诺丁汉大学附属中学 · 信息办出品
 > 📅 2026年6月6日 · 每周五发布
 
-![封面图](mages/cover-006.webp)
+![封面图](images/cover-006.webp)
 
 ---
 
@@ -23,7 +23,7 @@ AIGC:
 
 ### ✦ 百度秒哒：一句话，做一个App
 
-![工具截图](images/miaoda-intro.jpg)
+![工具截图](images/miaoda-intro.webp)
 
 **一句话说清：** 不会写代码？没关系，用大白话描述你的想法，AI帮你5分钟做出一个完整应用
 
@@ -54,7 +54,7 @@ AIGC:
 
 ### 钉钉「AI表格」：不只会算数，还会自己干活
 
-![操作截图](images/dingtalk-ai-table.jpg)
+![操作截图](images/dingtalk-ai-table.webp)
 
 你可能用过钉钉表格，但你可能还不知道——钉钉已经悄悄上线了AI表格，每个单元格都变成了AI的入口。据[CSDN](https://blog.csdn.net/csdnnews/article/details/149193801)报道，这是钉钉面向AI时代全新打造的应用入口。
 
@@ -82,7 +82,7 @@ AIGC:
 
 > 教育/政策/AI，只挑和你有关的
 
-![配图](images/cover-006.jpg)
+![配图](images/cover-006.webp)
 
 ### A. 250位教育专家呼吁学校暂停AI使用5年
 
