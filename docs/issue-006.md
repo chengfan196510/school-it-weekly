@@ -110,7 +110,7 @@ AIGC:
 
 > 用大白话解释，看完就能跟人聊
 
-![概念图解](week6-images/computing-power.jpg)
+![概念图解](images/computing-power.jpg)
 
 **📖 什么是算力？**
 
