@@ -13,3 +13,4 @@
 - 第 3 期：[令牌](docs/issue-003.md)
 - 第 4 期：[OCR](docs/issue-004.md)
 - 第 5 期：[小龙虾](docs/issue-005.md)
+- 第 6 期：[算力](docs/issue-006.md)
