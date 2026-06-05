@@ -72,7 +72,6 @@
 
 > 教育/政策/AI，只挑和你有关的
 
-![配图](images/computing-power.webp)
 
 ### A. 250位教育专家呼吁学校暂停AI使用5年
 
@@ -100,7 +99,7 @@
 
 > 用大白话解释，看完就能跟人聊
 
-![概念图解](images/computing-power.jpg)
+![配图](images/computing-power.webp)
 
 **📖 什么是算力？**
 
