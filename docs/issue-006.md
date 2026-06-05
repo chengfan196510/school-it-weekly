@@ -1,13 +1,3 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191110102MACQD9K64018705
-    ProduceID: 7633387962247594274-data_volume/files/所有对话/主对话/校园信息化周报/第6期-20260606.md
-    ReservedCode1: ""
-    ContentPropagator: 001191110102MACQD9K64028705
-    PropagateID: 3815777976717769#1780580780985
-    ReservedCode2: ""
----
 # 校园信息化周报（第 6 期）
 
 > 🏫 宁波诺丁汉大学附属中学 · 信息办出品
