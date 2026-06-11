@@ -12,5 +12,6 @@
 - 第 2 期：[智能体](docs/issue-002.md)
 - 第 3 期：[令牌](docs/issue-003.md)
 - 第 4 期：[OCR](docs/issue-004.md)
-- 第 5 期：[小龙虾](docs/issue-005.md)
+- 第 5 期：[小龙虾](docs/issue_005.md)
 - 第 6 期：[算力](docs/issue-006.md)
+- 第 7 期：[prompt](docs/issue-007.md)
