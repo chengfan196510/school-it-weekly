@@ -13,7 +13,7 @@ AIGC:
 > 🏫 宁波诺丁汉大学附属中学 · 信息办出品
 > 📅 2026年6月13日 · 每周五发布
 
-![封面图](week7-images/cover-007.jpg)
+![封面图](images/cover-007.jpg)
 
 ---
 
@@ -23,7 +23,7 @@ AIGC:
 
 ### ✦ 钉钉悟空：你的AI员工，帮你把事做完
 
-![工具截图](week7-images/wukong-intro.jpg)
+![工具截图](images/wukong-intro.jpg)
 
 **一句话说清：** 不只是聊天助手，而是能独立完成复杂任务的"AI员工"
 
@@ -59,7 +59,7 @@ AIGC:
 
 ### 钉钉「AI搜索」：别翻聊天记录了，直接问
 
-![操作截图](week7-images/dingtalk-ai-search.jpg)
+![操作截图](images/dingtalk-ai-search.jpg)
 
 你可能遇到过这种情况——上周群里发的那个文件，怎么也翻不到；上个月会议讨论的结论，到底记在哪了？钉钉7.6版本上线的AI搜索，就是来解决这个痛点的。据[36氪](https://m.36kr.com/newsflashes/3174730146956161)报道，钉钉AI搜索已向所有用户免费开放。
 
@@ -88,7 +88,7 @@ AIGC:
 
 > 教育/政策/AI，只挑和你有关的
 
-![配图](week7-images/news-007.jpg)
+![配图](images/news-007.jpg)
 
 ### A. Code.org更名CodeAI：全球最大编程教育平台全面转向AI
 
@@ -116,7 +116,7 @@ AIGC:
 
 > 用大白话解释，看完就能跟人聊
 
-![概念图解](week7-images/prompt-concept.jpg)
+![概念图解](images/prompt-concept.jpg)
 
 **📖 什么是提示词？**
 
